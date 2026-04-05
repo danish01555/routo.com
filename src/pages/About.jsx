@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 export default function About() {
   const team = [
     {
-      name: 'Aditya Kapoor',
+      name: 'Mayank singh chouhan',
       role: 'Founder & CEO',
       bio: 'Visionary leader with 10+ years in mobility and tech startups.',
       initial: 'AK',
     },
     {
-      name: 'Neha Malik',
-      role: 'CTO',
+      name: 'Danish Alam',
+      role: 'Developer & CTO',
       bio: 'Expert in AI and matching algorithms, ex-Amazon engineer.',
       initial: 'NM',
     },

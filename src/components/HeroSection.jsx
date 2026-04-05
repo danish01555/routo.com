@@ -53,6 +53,10 @@ export default function HeroSection() {
             >
               <button className="btn-primary text-lg">Start Ride</button>
               <button className="btn-secondary text-lg">Join Now</button>
+              <br></br>
+              {/*this is playstore button*/}
+             
+
             </motion.div>
 
             {/* Stats */}
@@ -62,18 +66,38 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="grid grid-cols-3 gap-6"
             >
-              <div>
-                <p className="text-3xl font-bold text-primary-600">50K+</p>
-                <p className="text-gray-600">Active Users</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-accent-teal">100K+</p>
-                <p className="text-gray-600">Rides Completed</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-accent-purple">$12M</p>
-                <p className="text-gray-600">Saved Together</p>
-              </div>
+              <div class="flex gap-4 flex-wrap items-center">
+
+  
+  <div class="relative inline-flex flex-col cursor-pointer">
+    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-400 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap z-10">
+      Launching Soon
+    </span>
+    <a href="#" class="mt-1.5 block">
+      <img 
+        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+        alt="Download on the App Store" 
+        class="h-12 w-auto"
+      />
+    </a>
+  </div>
+
+ 
+  <div class="relative inline-flex flex-col cursor-pointer">
+    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-400 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap z-10">
+      Launching Soon
+    </span>
+    <a href="#" class="mt-1.5 block">
+      <img 
+        src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+        alt="Get it on Google Play" 
+        class="h-12 w-auto"
+      />
+    </a>
+  </div>
+
+</div>
+ 
             </motion.div>
           </motion.div>
 
