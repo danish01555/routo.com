@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import buslogorouto from '../photos/buslogorouto.png'
 
 export default function Footer() {
   const footerLinks = {
@@ -45,10 +46,11 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-accent-teal to-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">R</span>
-              </div>
+            <img src={buslogorouto} alt="Routo Logo" className="h-10 w-auto" />
               <span className="text-xl font-bold">Routo</span>
+            
+            
+          
             </Link>
             <p className="text-gray-400 text-sm">Share Rides. Save Money. Travel Smart.</p>
           </motion.div>

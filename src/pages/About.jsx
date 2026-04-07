@@ -250,10 +250,10 @@ export default function About() {
           <div className="relative">
             <div className="space-y-8">
               {[
-                { year: '2025', title: 'Founded Routo', desc: 'Started with a vision to revolutionize ride-sharing' },
-                { year: '2024 Q2', title: '10K Users', desc: 'Reached 10,000 active users milestone' },
-                { year: '2024 Q3', title: '50K Users', desc: 'Expanded to 5 major cities, 50K users' },
-                { year: '2024 Q4', title: '$12M Saved', desc: 'Users collectively saved $12 million' },
+                { year: '2025-26', title: 'Founded Routo', desc: 'Started with a vision to revolutionize ride-sharing' },
+                { year: '2026 Q2', title: '35+ vehicle', desc: 'Reaching 100+ vehicles as soon as possible' },
+                { year: '2026 Q3', title: 'Launching soon', desc: 'Connecting  soon thousands of commuters' },
+                
               ].map((milestone, index) => (
                 <motion.div
                   key={index}

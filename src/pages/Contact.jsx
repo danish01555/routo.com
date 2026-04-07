@@ -34,20 +34,20 @@ export default function Contact() {
     {
       icon: '📧',
       title: 'Email',
-      content: 'support@routo.in',
+      content: 'routo.mobility@gmail.com',
       description: 'We respond within 24 hours',
     },
     {
       icon: '📞',
       title: 'Phone',
-      content: '+91 986 102 ROUTO (7686)',
+      content: '+91 9460521377',
       description: 'Available 24/7 for urgent matters',
     },
     {
       icon: '📍',
       title: 'Address',
-      content: 'Bangalore, India',
-      description: 'Tech Park, Whitefield',
+      content: 'Runway Incubator,UPES Dehradun, India',
+      description: 'Visit us during business hours',
     },
     {
       icon: '💬',
