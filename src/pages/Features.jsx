@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion'
 import FeatureCard from '../components/FeatureCard'
+import feedback from '../photos/feedback.png'
+import goshare_details from '../photos/goshare_details.png'
+import profile from '../photos/profile.png'
+import goshare_ride from '../photos/goshare_ride.png'
+import map from '../photos/map.png'
+import notification from '../photos/notification.png'
+import history from '../photos/history.png'
+import sos from '../photos/sos.png'
 
 export default function Features() {
   const allFeatures = [
@@ -95,7 +103,7 @@ export default function Features() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-white to-gray-50">
+      <section className="pt-24 pb-16 sm:pt-28 sm:pb-20 bg-gradient-to-br from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -103,10 +111,10 @@ export default function Features() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-secondary-900 mb-6 leading-tight">
               Powerful Features for <span className="text-primary-600">Smart Commuting</span>
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto px-2 sm:px-0">
               Everything you need to share rides safely, save money, and travel efficiently
             </p>
           </motion.div>
@@ -114,15 +122,40 @@ export default function Features() {
       </section>
 
       {/* All Features Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
             {allFeatures.map((feature, index) => (
               <FeatureCard key={index} {...feature} index={index} />
             ))}
           </div>
         </div>
       </section>
+      {/* image sections*/}
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-5"
+          >
+            <h2 className="section-title">Routo App Details</h2>
+            <p className="section-description">See how our app's features set us apart</p>
+          </motion.div>
+      <section className="py-16 sm:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <img src={goshare_details} alt="GoShare Details" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={goshare_ride} alt="GoShare Ride" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={map} alt="Map View" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={notification} alt="Notifications" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={history} alt="Ride History" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={sos} alt="SOS Button" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={profile} alt="User Profile" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={feedback} alt="Feedback" className="w-full h-auto rounded-lg shadow-lg" />
+          </div>
+        </div>
+      </section>
+
 
       {/* Detailed Features */}
       <section className="py-20 bg-gray-50">
@@ -137,7 +170,7 @@ export default function Features() {
             <p className="section-description">Comprehensive tools for every aspect of your journey</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {detailedFeatures.map((feature, index) => (
               <motion.div
                 key={index}
@@ -181,9 +214,9 @@ export default function Features() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="overflow-x-auto"
+            className="overflow-x-auto rounded-3xl border border-gray-200"
           >
-            <table className="w-full">
+            <table className="min-w-[640px] w-full">
               <thead>
                 <tr className="border-b-2 border-gray-200">
                   <th className="text-left py-4 px-6 font-bold">Feature</th>

@@ -5,27 +5,53 @@ export default function About() {
     {
       name: 'Mayank singh chouhan',
       role: 'Founder & CEO',
-      bio: 'Visionary leader with 10+ years in mobility and tech startups.',
-      initial: 'AK',
+      linkedin: 'https://www.linkedin.com/in/mayank-singh100705/',
+      initial: 'MS',
+     
     },
     {
       name: 'Danish Alam',
       role: 'Developer & CTO',
-      bio: 'Expert in AI and matching algorithms, ex-Amazon engineer.',
-      initial: 'NM',
+      linkedin: 'https://www.linkedin.com/in/danish-alam-ba03a3287',
+     initial: 'DA',
     },
     {
-      name: 'Arjun Singh',
-      role: 'Head of Operations',
-      bio: 'Operations strategist focused on user safety and growth.',
+      name: 'Harsh Anand ',
+      role: 'Exeecutive Leadership',
+      linkedin: 'https://www.linkedin.com/in/harsh-anand-736a31303/',
+      initial: 'HA',
+    },
+    {
+      name: 'Akshat Sajwan',
+      role: 'Exeecutive Leadership',
+      linkedin: 'https://www.linkedin.com/in/akshat-sajwan-9b1a4b1b2/',
       initial: 'AS',
     },
     {
-      name: 'Priya Desai',
-      role: 'Lead Designer',
-      bio: 'Creative mind behind our beautiful user experience.',
-      initial: 'PD',
+      name: 'Piyush agrawal',
+      role: 'Exeecutive Leadership',
+      linkedin: 'https://www.linkedin.com/in/akshat-sajwan-9b1a4b1b2/',
+      initial: 'PA',
     },
+    {
+      name: 'Rounak goyal',
+      role: 'Exeecutive Leadership',
+      linkedin: 'https://www.linkedin.com/in/raunak-goyal-91bb0a342/',
+      initial: 'RG',
+    },
+     {
+      name: 'Pratham Thakuran',
+      role: 'Exeecutive Leadership',
+      linkedin: 'https://www.linkedin.com/in/pratham-thakuran-832184325/',
+      initial: 'PT',
+    },
+     {
+      name: 'Arnav Thapliyal',
+      role: 'co-founder & COO',
+      linkedin: 'https://www.linkedin.com/in/arnavthapliyal/',
+      initial: 'AT',
+    },
+   
   ]
 
   const values = [
@@ -165,7 +191,9 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold text-secondary-900 mb-2">{member.name}</h3>
                 <p className="text-primary-600 font-semibold mb-3">{member.role}</p>
-                <p className="text-gray-600">{member.bio}</p>
+                <p className="text-red-600 underline"><a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+  LINKEDIN PROFILE
+</a></p>
               </motion.div>
             ))}
           </div>
@@ -222,7 +250,7 @@ export default function About() {
           <div className="relative">
             <div className="space-y-8">
               {[
-                { year: '2024', title: 'Founded Routo', desc: 'Started with a vision to revolutionize ride-sharing' },
+                { year: '2025', title: 'Founded Routo', desc: 'Started with a vision to revolutionize ride-sharing' },
                 { year: '2024 Q2', title: '10K Users', desc: 'Reached 10,000 active users milestone' },
                 { year: '2024 Q3', title: '50K Users', desc: 'Expanded to 5 major cities, 50K users' },
                 { year: '2024 Q4', title: '$12M Saved', desc: 'Users collectively saved $12 million' },

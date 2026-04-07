@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import logo from'../photos/logo.png'
+import routo from '../photos/routo.png'
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -14,6 +15,9 @@ export default function Navbar() {
     { name: 'Contact', path: '/contact' },
   ]
 
+  const baseLinkClasses = 'text-secondary-700 hover:text-primary-600 font-medium transition-colors duration-300'
+  const activeLinkClasses = 'text-primary-600 font-semibold underline underline-offset-4 decoration-primary-600'
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -24,18 +28,21 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <img src={logo}></img>
-
+          <a href="/" className="flex items-center">
+             <img src={routo} alt="Routo Logo" className="h-10 w-auto" />
+           </a>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             {menuItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.path}
                 to={item.path}
-                className="text-secondary-700 hover:text-primary-600 font-medium transition-colors duration-300"
+                className={({ isActive }) =>
+                  isActive ? activeLinkClasses : baseLinkClasses
+                }
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
           </div>
 
@@ -85,14 +92,16 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-4 pt-4">
               {menuItems.map((item) => (
-                <Link
+                <NavLink
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className="text-secondary-700 hover:text-primary-600 font-medium transition-colors duration-300"
+                  className={({ isActive }) =>
+                    isActive ? activeLinkClasses : baseLinkClasses
+                  }
                 >
                   {item.name}
-                </Link>
+                </NavLink>
               ))}
               <button className="btn-secondary text-left">Login</button>
               <button className="btn-primary text-left">Get Started</button>

@@ -52,18 +52,18 @@ body {
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffd700;
-  border-radius: 4px;
+  background: #d5ff01;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b;
+  background: #0293bb;
 }
